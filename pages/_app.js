@@ -13,7 +13,7 @@ const MyApp = (props) => {
   return (
     <Container>
       <Head>
-        <title>{pageTitle || 'REACT-NEXT-TEMPLATE'}</title>
+        <title>{pageTitle || 'T.S.G. security'}</title>
       </Head>
       <ApolloProvider client={apollo}>
         <Component {...pageProps} />

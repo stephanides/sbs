@@ -1,0 +1,43 @@
+.services{
+  .services_holder{
+    .service{
+      width: 550px;
+      height: 550px;
+      background-image: url("/static/images/material.png"); 
+      cursor:pointer;
+      &:hover{
+        background-image: none;
+        background-color: #b4192c;
+      }
+      h2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color:white;
+        font-size: 2.75em;
+      }
+    }
+    .service_content{
+      width: 550px;
+      height: 550px;
+      background-image: url("/static/images/material2.png"); 
+      cursor:pointer;
+      &:hover{
+        background-image: none;
+        background-color: #b4192c;
+      }
+      h2{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color:white;
+        font-size: 2.75em;
+      }
+    }
+  }
+}
+
+.show{
+  display: flex !important;
+}
+.hide{
+  display: none !important;
+}

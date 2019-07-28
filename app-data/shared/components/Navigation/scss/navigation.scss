@@ -1,0 +1,35 @@
+.navbar{
+  transition:all .4s ease-out;
+  img{
+    width: 220px;
+  }
+}
+
+.background{
+  background-color: rgba(0,0,0,0);
+}
+.scroll_background{
+  background-color: white;
+  .nav-link{
+    color: #808080 !important;
+    padding: 2rem;
+  }
+}
+.nav-link{
+  color: white !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight:500;
+  font-size: 1em;
+  padding: 4rem;
+  padding-left: 2em !important;
+  cursor: pointer;
+  &:hover{
+    color: #b4192c !important;
+  }
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}

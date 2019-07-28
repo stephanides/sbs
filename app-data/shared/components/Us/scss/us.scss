@@ -1,0 +1,28 @@
+.us{
+  padding-top: 6.25em;
+  background-color: #ededed;
+  padding-bottom: 6.25em;
+  .us_holder{
+    .us_item{
+      img{
+        height:74px;
+        margin: 0 auto;
+        display: block;
+      }
+      h4{
+        font-weight: 500;
+        font-size: 1.8em; 
+        padding-top: 1em;
+        padding-bottom: 1em;
+        color: #2d2c2d;
+        font-family: 'Roboto', sans-serif;
+      }
+      p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25em;
+        color:#808080;
+      }
+    }
+  }
+}
+

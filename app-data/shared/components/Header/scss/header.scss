@@ -1,0 +1,16 @@
+.header{
+    background-image: url("/static/images/header.png");
+    height: 80vh;
+    min-height: 600px;
+    position: relative;
+    h1{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 3.12em;
+        color: white !important;
+    }
+    .text_holder{
+        position: relative;
+        top: 280px;
+    }
+}
