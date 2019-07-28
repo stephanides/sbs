@@ -3,11 +3,11 @@ import { Container, Row, Col } from 'reactstrap';
 import './scss/services.scss'
 
 const Services = () => {
-  const [isOpen, toggle] = useState([false,false,false,false,false,false]);
+  const [isOpen, toggle] = useState([false, false, false, false, false, false]);
 
   const handleToggle = (i) => {
-    const modifiedIsOpen = isOpen;
-    console.log(modifiedIsOpen);
+    const modifiedIsOpen = [...isOpen];
+  
     for (let j = 0; j < modifiedIsOpen.length; j += 1) {
       if (j === i) {
         modifiedIsOpen[j] = true;
@@ -16,9 +16,12 @@ const Services = () => {
       }
     }
 
+    console.log(modifiedIsOpen);
     toggle(modifiedIsOpen);
-    console.log(isOpen[0]);
   };
+
+  console.log(isOpen);
+  console.log(isOpen[0]);
 
   return (
     <div className="services">
