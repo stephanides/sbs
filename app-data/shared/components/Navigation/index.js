@@ -43,19 +43,19 @@ const Navigation = () => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-              <AnchorLink href='#about' className="nav-link">O NÁS</AnchorLink>
+              <AnchorLink href='#about' className="nav-link" onClick={() => toggle(!isOpen)}>O NÁS</AnchorLink>
               </NavItem>
               <NavItem>
-              <AnchorLink href='#services' className="nav-link">SLUŽBY</AnchorLink>
+              <AnchorLink href='#services' className="nav-link" onClick={() => toggle(!isOpen)}>SLUŽBY</AnchorLink>
               </NavItem>
               <NavItem>
-              <AnchorLink href='#footer' className="nav-link">LICENCIE</AnchorLink>
+              <AnchorLink href='#footer' className="nav-link" onClick={() => toggle(!isOpen)}>LICENCIE</AnchorLink>
               </NavItem>
               <NavItem>
-              <AnchorLink href='#career' className="nav-link">KARIÉRA</AnchorLink>
+              <AnchorLink href='#career' className="nav-link" onClick={() => toggle(!isOpen)}>KARIÉRA</AnchorLink>
               </NavItem>
               <NavItem>
-              <AnchorLink href='#footer' className="nav-link">KONTAKT</AnchorLink>
+              <AnchorLink href='#footer' className="nav-link" onClick={() => toggle(!isOpen)}>KONTAKT</AnchorLink>
               </NavItem>
             </Nav>
           </Collapse>
