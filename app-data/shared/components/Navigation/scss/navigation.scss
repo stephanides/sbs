@@ -1,18 +1,71 @@
+$break-small: 576px;
+$break-mobile:768px;
+$break-medium: 992px;
+$break-large: 1200px;
+
+
 .navbar{
   transition:all .4s ease-out;
+  @media screen and (max-width: $break-mobile) {
+    width: 100vw;
+  }
   img{
     width: 220px;
+    @media screen and (max-width: $break-mobile) {
+      padding: 1em;
+    }
+  }
+  .navbar-brand{
+    @media screen and (max-width: $break-mobile) {
+      padding-left: 2em;
+    }
+  }
+  .navbar-toggler{
+    @media screen and (max-width: $break-mobile) {
+      padding-right: 2em;
+    }
+  }
+  .menu_holder{
+    @media screen and (max-width: $break-mobile) {
+      max-width:100vw;
+    }
   }
 }
 
 .background{
   background-color: rgba(0,0,0,0);
+  .navbar-nav{
+    @media screen and (max-width: $break-mobile) {
+      height:100vh;
+      background-color: rgba(0,0,0,.95);
+    }
+  }
+  .nav-link{
+    @media screen and (max-width: $break-mobile) {
+      text-align: center;
+      padding: .5em;
+      font-size: 2em;
+      color: #808080 !important;
+      padding: 2rem;
+    }
+  }
 }
 .scroll_background{
   background-color: white;
+  box-shadow: 2px -1px 9px 0px #888888;
+  .navbar-nav{
+    @media screen and (max-width: $break-mobile) {
+      height:100vh;
+    }
+  }
   .nav-link{
     color: #808080 !important;
     padding: 2rem;
+    @media screen and (max-width: $break-mobile) {
+      text-align: center;
+      padding: .5em;
+      font-size: 2em;
+    }
   }
 }
 .nav-link{
@@ -20,9 +73,13 @@
   font-family: 'Roboto', sans-serif;
   font-weight:500;
   font-size: 1em;
-  padding: 4rem;
+  padding: 2.5rem;
   padding-left: 2em !important;
   cursor: pointer;
+  @media screen and (max-width: $break-large) {
+    padding-left: .3em !important;
+  }
+ 
   &:hover{
     color: #b4192c !important;
   }
@@ -32,4 +89,12 @@
 }
 .show{
   display: block;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(180,25,44, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  outline: none !important;
+}
+.navbar-toggler{
+  outline: none !important;
 }

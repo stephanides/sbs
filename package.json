@@ -41,6 +41,7 @@
     "next-with-apollo": "^4.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6",
     "reactstrap": "^8.0.1",

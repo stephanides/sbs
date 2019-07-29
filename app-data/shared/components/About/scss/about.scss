@@ -1,11 +1,28 @@
+$break-small: 576px;
+$break-mobile:768px;
+$break-medium: 992px;
+$break-large: 1200px;
+
 .about{
   .text_holder{
     padding-bottom: 6.25em;
     padding-top: 6.25em;
+    @media screen and (max-width: $break-medium) {
+      padding-bottom: 3.25em;
+      padding-top: 3.25em;
+    }
     h6{
       font-size: 1.25em;
       color:#808080;
       font-family: 'Roboto', sans-serif;
+      font-weight: 400 !important;
+      padding-left: 1em;
+      padding-right: 1em;
+      @media screen and (max-width: $break-medium) {
+        font-size: 1em;
+        padding-left: 0em;
+        padding-right: 0em;
+      }
     }
   }
 }

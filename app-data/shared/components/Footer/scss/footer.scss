@@ -1,0 +1,43 @@
+$break-small: 576px;
+$break-mobile:768px;
+$break-medium: 992px;
+$break-large: 1200px;
+
+
+.footer{
+  background-color: #2d2c2d;
+  padding-bottom: 120px;
+  h2{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 3.125em;
+    padding-top: 100px;
+  }
+  p{
+    color:#d5d5d5;
+    font-weight: 400;
+    font-size: 1em;
+  }
+  img{
+    width: 120px;
+    float: right;
+    cursor:pointer;
+    @media screen and (max-width: $break-mobile) {
+      width:50%;
+      display: block;
+      margin: 0 auto;
+      float:left;
+    }
+  }
+}
+
+.modal-dialog{
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  img{
+    width:100%;
+  }
+}

@@ -1,13 +1,38 @@
+$break-small: 576px;
+$break-mobile:768px;
+$break-medium: 992px;
+$break-large: 1200px;
+
+
 .us{
   padding-top: 6.25em;
   background-color: #ededed;
   padding-bottom: 6.25em;
+  @media screen and (max-width: $break-small) {
+    padding-top: 3.25em;
+    padding-bottom: 3.25em;
+  }
   .us_holder{
     .us_item{
+      cursor:pointer;
+      @media screen and (max-width: $break-small) {
+        padding-top: 30px;
+      }
+      &:hover{
+        .normal{
+          display: none;
+        }
+        .hover{
+          display: block;
+        }
+      }
       img{
         height:74px;
         margin: 0 auto;
         display: block;
+      }
+      .hover{
+        display: none;
       }
       h4{
         font-weight: 500;
@@ -16,11 +41,17 @@
         padding-bottom: 1em;
         color: #2d2c2d;
         font-family: 'Roboto', sans-serif;
+        @media screen and (max-width: $break-large) {
+          font-size: 1.6em;
+        }
       }
       p{
         font-family: 'Roboto', sans-serif;
         font-size: 1.25em;
         color:#808080;
+        @media screen and (max-width: $break-large) {
+          font-size: 1.05em;
+        }
       }
     }
   }

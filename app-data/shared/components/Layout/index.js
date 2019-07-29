@@ -4,6 +4,8 @@ import Header from '../Header';
 import About from '../About';
 import Us from '../Us';
 import Services from '../Services';
+import Career from '../Career';
+import Footer from '../Footer';
 import { Container } from 'reactstrap';
 
 const Layout = ({ children }) => (
@@ -13,6 +15,8 @@ const Layout = ({ children }) => (
     <About />
     <Us />
     <Services />
+    <Career />
+    <Footer />
     <Container>
       { children }
     </Container>

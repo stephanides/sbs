@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Container,
   Collapse,
   Navbar,
@@ -19,33 +19,22 @@ const Navigation = () => {
   const [isTop, isPageTop] = useState(true);
   
   useEffect(() => {
-    document.addEventListener('scroll', () => {
+    const checkTop = () => {
       const currentIsTop = window.scrollY < 100;
       if (currentIsTop !== isTop) {
         isPageTop(currentIsTop);
       }
+    };
+
+    checkTop();
+    document.addEventListener('scroll', () => {
+      checkTop();
     }, []);
   });
 
   return (
-   /* <div className="border mb-4 p-2">
-      <Container>
-        <ul className="d-flex m-0 p-0 list-unstyled justify-content-start">
-          <LI>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </LI>
-          <LI>
-            <Link href="/sub-page">
-              <a>Subpage</a>
-            </Link>
-          </LI>
-        </ul>
-      </Container>
-    </div>*/
       <Navbar className={isTop ? "background fixed-top p-0" : "scroll_background fixed-top p-0"}  expand="md">
-        <Container>
+        <Container className="menu_holder">
         <NavbarBrand href="/">
           <img src="/static/images/white.png" alt="Logo White" className={isTop ? "show " : "hide"}/>
           <img src="/static/images/black.png" alt="Logo Black" className={isTop ? "hide " : "show"}/>
@@ -54,19 +43,19 @@ const Navigation = () => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className="nav-link">O NÁS</NavLink>
+              <AnchorLink href='#about' className="nav-link">O NÁS</AnchorLink>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-link">SLUŽBY</NavLink>
+              <AnchorLink href='#services' className="nav-link">SLUŽBY</AnchorLink>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-link">LICENCIE</NavLink>
+              <AnchorLink href='#footer' className="nav-link">LICENCIE</AnchorLink>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-link">KARIÉRA</NavLink>
+              <AnchorLink href='#career' className="nav-link">KARIÉRA</AnchorLink>
               </NavItem>
               <NavItem>
-                <NavLink className="nav-link">KONTAKT</NavLink>
+              <AnchorLink href='#footer' className="nav-link">KONTAKT</AnchorLink>
               </NavItem>
             </Nav>
           </Collapse>

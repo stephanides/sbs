@@ -3,7 +3,7 @@ import { Container } from 'reactstrap';
 import './scss/header.scss'
 
 const Header = () => (
-  <div className="header">
+  <div className="header" id="header">
     <Container fluid>
       <Container>
         <div className="text_holder">

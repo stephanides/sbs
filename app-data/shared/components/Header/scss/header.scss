@@ -1,16 +1,41 @@
+$break-small: 576px;
+$break-mobile:768px;
+$break-medium: 992px;
+$break-large: 1200px;
+
 .header{
-    background-image: url("/static/images/header.png");
+    background-image: url("/static/images/header.jpg");
     height: 80vh;
-    min-height: 600px;
+    min-height: 800px;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (max-width: $break-medium) {
+        background-position-x: 25%;
+    }
+    @media screen and (max-width: $break-mobile) {
+        background-position-x: 50%;
+    }
+    @media screen and (max-width: $break-small) {
+        min-height: 600px;
+    }
     h1{
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 3.12em;
         color: white !important;
+        @media screen and (max-width: $break-large) {
+            font-size: 2.5em;
+        }
+        @media screen and (max-width: $break-small) {
+            font-size: 2em;
+        }
     }
     .text_holder{
         position: relative;
         top: 280px;
+        @media screen and (max-width: $break-small) {
+            top: 200px;
+        }
     }
 }
