@@ -36,7 +36,7 @@ const Navigation = () => {
           <img src="/static/images/white.png" alt="Logo White" className={isTop ? 'show' : 'hide'} />
           <img src="/static/images/black.png" alt="Logo Black" className={isTop ? 'hide' : 'show'} />
         </NavbarBrand>
-        <NavbarToggler onClick={()=> toggle(!isOpen)} />
+        <NavbarToggler onClick={() => toggle(!isOpen)} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
