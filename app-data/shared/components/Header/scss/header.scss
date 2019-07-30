@@ -11,9 +11,12 @@ $break-large: 1200px;
     background-size: cover;
     background-repeat: no-repeat;
     @media screen and (max-width: $break-medium) {
-        background-position-x: 25%;
+        background-position-x: 50%;
     }
     @media screen and (max-width: $break-mobile) {
+        background-position-x: 50%;
+    }
+    @media screen and (max-width: $break-large) {
         background-position-x: 50%;
     }
     @media screen and (max-width: $break-small) {

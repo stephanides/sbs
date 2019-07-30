@@ -11,6 +11,10 @@ $break-large: 1200px;
       display: flex;
       justify-content: center;
     }
+    @media screen and (max-width: $break-mobile) {
+      padding-left: 0;
+      padding-right: 0;
+    }
     .service{
       width: 550px;
       height: 550px;
