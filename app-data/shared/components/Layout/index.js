@@ -6,9 +6,8 @@ import Us from '../Us';
 import Services from '../Services';
 import Career from '../Career';
 import Footer from '../Footer';
-import { Container } from 'reactstrap';
 
-const Layout = ({ children }) => (
+const Layout = () => (
   <div>
     <Navigation />
     <Header />
@@ -17,9 +16,6 @@ const Layout = ({ children }) => (
     <Services />
     <Career />
     <Footer />
-    <Container>
-      { children }
-    </Container>
   </div>
 );
 

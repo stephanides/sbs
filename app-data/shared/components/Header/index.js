@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import './scss/header.scss'
+import './scss/header.scss';
 
 const Header = () => (
   <div className="header" id="header">
