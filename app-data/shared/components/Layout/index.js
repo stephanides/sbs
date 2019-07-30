@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Navigation from '../Navigation';
 import Header from '../Header';
