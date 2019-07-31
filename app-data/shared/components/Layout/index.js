@@ -1,22 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+import dynamic from 'next/dynamic';
+
 import Navigation from '../Navigation';
 import Header from '../Header';
-import About from '../About';
-import Us from '../Us';
-import Services from '../Services';
-import Career from '../Career';
-import Footer from '../Footer';
+
+const DynamicAbout = dynamic(() => import('../About'));
+const DynamicUs = dynamic(() => import('../Us'));
+const DynamicServices = dynamic(() => import('../Services'));
+const DynamicCareer = dynamic(() => import('../Career'));
+const DynamicFooter = dynamic(() => import('../Footer'));
 
 const Layout = () => (
   <div>
     <Navigation />
     <Header />
-    <About />
-    <Us />
-    <Services />
-    <Career />
-    <Footer />
+    <DynamicAbout />
+    <DynamicUs />
+    <DynamicServices />
+    <DynamicCareer />
+    <DynamicFooter />
   </div>
 );
 

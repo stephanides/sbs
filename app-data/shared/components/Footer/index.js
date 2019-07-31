@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import {
-  Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter,
+  Container, Row, Col,
 } from 'reactstrap';
+import dynamic from 'next/dynamic';
 import './scss/footer.scss';
+
+const DynamicModal = dynamic(() => import('./components/Modal'));
 
 const Footer = () => {
   const [isOpen, toggle] = useState(false);
+
   return (
     <div className="footer" id="footer">
       <Container fluid>
@@ -44,23 +48,16 @@ const Footer = () => {
             </Col>
             <Col md="3" xs="12" className="mt-4">
               <button type="button" className="bg-transparent border-0" onClick={() => toggle(!isOpen)}>
-                <img src="/static/images/licencia.jpg" alt="Licencia" />
+                <img src="/static/images/licencia-min.jpg" alt="Licencia" />
               </button>
             </Col>
           </Row>
         </Container>
       </Container>
-      <Modal isOpen={isOpen} toggle={() => toggle(!isOpen)}>
-        <ModalHeader toggle={() => toggle(!isOpen)}>Licencia</ModalHeader>
-        <ModalBody>
-          <img src="/static/images/licencia.jpg" alt="Licencia" />
-        </ModalBody>
-        <ModalFooter>
-          <Button color="secondary" onClick={() => toggle(!isOpen)}>Zavrieť</Button>
-        </ModalFooter>
-      </Modal>
+      <DynamicModal isOpen={isOpen} toggle={toggle} />
     </div>
   );
 };
+// <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 
 export default Footer;
