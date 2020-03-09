@@ -15,6 +15,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon"/>
           <script
             dangerouslySetInnerHTML={{
               __html: `</script>
@@ -31,6 +32,23 @@ class MyDocument extends Document {
               this);`,
               }}
           />
+          <meta name="google-site-verification" content="SWGUPqFMUzy121DYyJKNemXdcxdp9qdKOipr2pxMF78" />
+          <meta name="description" content="Súkromná bezpečnostná služba T.S.G. Security je novovzniknutá firma, ktorá preferuje nový pohľad a úroveň poskytovania služieb v bezpečnostnom odvetví." />
+          <meta name="keywords" content="Súkromná bezpečnostná služba T.S.G. Security strážna služba ochrana osôb ochrana majetku SBS" />
+          
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144997304-1"></script>
+          <script
+          dangerouslySetInnerHTML={
+              {
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-144997304-1');`,
+              }}
+            />
+
         </Head>
         <body>
           <Main />

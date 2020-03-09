@@ -46,7 +46,7 @@ const Footer = () => {
                 +421 910 95 54 43
               </p>
             </Col>
-            <Col md="3" xs="12" className="mt-4">
+            <Col md="3" xs="12" className="mt-4" id="licence">
               <button type="button" className="bg-transparent border-0" onClick={() => toggle(!isOpen)}>
                 <img src="/static/images/licencia-min.jpg" alt="Licencia" />
               </button>

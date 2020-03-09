@@ -30,13 +30,20 @@ const Navigation = () => {
   });
 
   return (
-    <Navbar className={isTop ? 'background fixed-top p-0' : 'scroll_background fixed-top p-0'} expand="md">
+    <Navbar
+      className={
+        isTop ? 'background fixed-top p-0' : 'scroll_background fixed-top p-0'
+      }
+      expand="md"
+    >
       <Container className="menu_holder">
         <NavbarBrand href="/">
-          <img src="/static/images/white.png" alt="Logo White" className={isTop ? 'show' : 'hide'} />
-          <img src="/static/images/black.png" alt="Logo Black" className={isTop ? 'hide' : 'show'} />
+          <img src="/static/images/white.png" alt="Logo White" className={isTop ? 'show ' : 'hide '} />
+          <img src="/static/images/black.png" alt="Logo Black" className={isTop ? 'hide ' : 'show '} />
         </NavbarBrand>
-        <NavbarToggler onClick={() => toggle(!isOpen)} />
+        <NavbarToggler
+          onClick={() =>toggle(!isOpen)}
+        />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
@@ -46,7 +53,7 @@ const Navigation = () => {
               <AnchorLink href="#services" className="nav-link" onClick={() => toggle(!isOpen)}>SLUŽBY</AnchorLink>
             </NavItem>
             <NavItem>
-              <AnchorLink href="#footer" className="nav-link" onClick={() => toggle(!isOpen)}>LICENCIE</AnchorLink>
+              <AnchorLink href="#licence" className="nav-link" onClick={() => toggle(!isOpen)}>LICENCIE</AnchorLink>
             </NavItem>
             <NavItem>
               <AnchorLink href="#career" className="nav-link" onClick={() => toggle(!isOpen)}>KARIÉRA</AnchorLink>

@@ -47,10 +47,9 @@ $break-large: 1200px;
   .nav-link{
     @media screen and (max-width: $break-mobile) {
       text-align: center;
-      padding: .5em;
-      font-size: 2em;
-      color: #808080 !important;
-      padding: 2rem;
+      padding: .3em;
+      font-size: 1.4em;
+      color: white !important;
     }
   }
 }
@@ -60,6 +59,7 @@ $break-large: 1200px;
   .navbar-nav{
     @media screen and (max-width: $break-mobile) {
       height:100vh;
+      background-color: rgba(0,0,0,.95);
     }
   }
   .nav-link{
@@ -67,8 +67,9 @@ $break-large: 1200px;
     padding: 2rem;
     @media screen and (max-width: $break-mobile) {
       text-align: center;
-      padding: .5em;
-      font-size: 2em;
+      padding: .3em;
+      font-size: 1.4em;
+      color:white !important;
     }
   }
 }
@@ -101,4 +102,9 @@ $break-large: 1200px;
 }
 .navbar-toggler{
   outline: none !important;
+}
+.navbar-nav{
+  @media screen and (max-width: $break-mobile) {
+    padding-top: 2em;
+  }
 }

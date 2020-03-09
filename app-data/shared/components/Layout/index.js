@@ -12,7 +12,7 @@ const DynamicCareer = dynamic(() => import('../Career'));
 const DynamicFooter = dynamic(() => import('../Footer'));
 
 const Layout = () => (
-  <div>
+  <div >
     <Navigation />
     <Header />
     <DynamicAbout />
