@@ -1,7 +1,5 @@
-import React from 'react';
-import {
-  Button, Modal, ModalHeader, ModalBody, ModalFooter,
-} from 'reactstrap';
+import React from "react";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 const ModalComponent = ({ isOpen, toggle }) => (
   <Modal isOpen={isOpen} toggle={() => toggle(!isOpen)}>
@@ -10,7 +8,9 @@ const ModalComponent = ({ isOpen, toggle }) => (
       <img src="/static/images/licencia.jpg" alt="Licencia" />
     </ModalBody>
     <ModalFooter>
-      <Button color="secondary" onClick={() => toggle(!isOpen)}>Zavrieť</Button>
+      <Button color="secondary" onClick={() => toggle(!isOpen)}>
+        Zavrieť
+      </Button>
     </ModalFooter>
   </Modal>
 );
